@@ -76,7 +76,7 @@ st.markdown("""<style>
 MESES_NOMES = ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]
 MESES_MAP = {n: i+1 for i, n in enumerate(MESES_NOMES)}
 
-st.title("Lucas e Rosana")
+st.title("Andrê e Larissa")
 
 # --- 5. CONTROLE DE ACESSO ---
 st.sidebar.title("🔐 Área Restrita")
@@ -343,5 +343,6 @@ if tab_ob:
                     else: ln[datetime.strptime(d, '%Y-%m-%d').strftime('%d/%m')] = "❌ | ❌"
                 cham_d.append(ln)
             st.dataframe(pd.DataFrame(cham_d), use_container_width=True, hide_index=True)
+
 
 
